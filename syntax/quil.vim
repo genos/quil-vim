@@ -5,8 +5,7 @@ endif
 syntax clear
 
 syntax keyword quilTodo TODO FIXME
-syntax match quilComment "\v#.*$" contains=@Spell,quilTodo
-syntax match quilComment "\_^\v#.*$" contains=@Spell,quilTodo
+syntax match quilComment "\v#.*$" display contains=@Spell,quilTodo
 
 syntax keyword quilKeyword ADD AND AS CONTROLLED CONVERT DAGGER DECLARE DEFCIRCUIT DEFGATE DIV EQ EXCHANGE FORKED GE GT HALT INCLUDE IOR JUMP JUMP-UNLESS JUMP-WHEN LABEL LE LOAD LT MATRIX MEASURE MOVE MUL NEG NOP NOT OFFSET PAULI-SUM PERMUTATION PRAGMA RESET SHARING STORE SUB WAIT XOR
 syntax keyword quilGate CAN CCNOT CNOT CPHASE CPHASE00 CPHASE01 CPHASE10 CSWAP CZ H I ISWAP PHASE PISWAP PSWAP RX RY RZ S SWAP T X XY Y Z
