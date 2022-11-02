@@ -12,7 +12,7 @@ syntax keyword quilType BIT OCTET REAL INTEGER
 
 syntax match quilInteger "\v\d+"
 syntax match quilReal "\v(\d+)?\.?\d+(([Ee])?([-+])?\d+)?"
-syntax match quilComplex "\v\<(i|pi)\>"
+syntax match quilComplex "\v\<(pi|i)\>"
 syntax match quilComplex "\v(\d+)?i"
 syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
@@ -24,7 +24,7 @@ syntax match quilParameter "\v[%][A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 syntax region quilString start=/"/ skip=/\\"/ end=/"/ oneline
 
-"syntax match quilIdentifier "\v[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
+syntax match quilIdentifier "\v[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 highlight link quilComment Comment
 highlight link quilKeyword Keyword
@@ -37,6 +37,6 @@ highlight link quilOperator Operator
 highlight link quilLabel Special
 highlight link quilParameter Special
 highlight link quilString String
-"highlight link quilIdentifier Identifier
+highlight link quilIdentifier Identifier
 
 let b:current_syntax = 'quil'
