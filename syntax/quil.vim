@@ -25,7 +25,7 @@ syntax match quilParameter "\v[%][A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 syntax region quilString start=/"/ skip=/\\"/ end=/"/ oneline
 
-syntax match quilIdentifier "\v[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
+syntax match quilIdentifier "\v\<[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?\>"
 
 highlight link quilComment Comment
 highlight link quilKeyword Keyword
