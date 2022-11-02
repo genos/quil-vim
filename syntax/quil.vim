@@ -4,8 +4,7 @@ endif
 
 syntax clear
 
-syntax match quilComment "\v^#.*$"
-syntax match quilComment "\v#.*$"
+syntax match quilComment "#.*$"
 
 syntax keyword quilKeyword ADD AND AS CONTROLLED CONVERT DAGGER DECLARE DEFCIRCUIT DEFGATE DIV EQ EXCHANGE FORKED GE GT HALT INCLUDE IOR JUMP JUMP-UNLESS JUMP-WHEN LABEL LE LOAD LT MATRIX MEASURE MOVE MUL NEG NOP NOT OFFSET PAULI-SUM PERMUTATION PRAGMA RESET SHARING STORE SUB WAIT XOR
 syntax keyword quilGate CAN CCNOT CNOT CPHASE CPHASE00 CPHASE01 CPHASE10 CSWAP CZ H I ISWAP PHASE PISWAP PSWAP RX RY RZ S SWAP T X XY Y Z
@@ -13,7 +12,7 @@ syntax keyword quilType BIT OCTET REAL INTEGER
 
 syntax match quilInteger "\v\d+"
 syntax match quilReal "\v(\d+)?\.?\d+(([Ee])?([-+])?\d+)?"
-syntax match quilComplex "\v\<(i|pi|pi\/\d+)\>"
+syntax match quilComplex "\v\<(i|pi)\>"
 syntax match quilComplex "\v(\d+)?i"
 syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
