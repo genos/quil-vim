@@ -12,7 +12,7 @@ syntax keyword quilType BIT OCTET REAL INTEGER
 
 syntax match quilInteger "\v\d+"
 syntax match quilReal "\v(\d+)?\.?\d+(([Ee])?([-+])?\d+)?"
-syntax match quilComplex "\v\<(i|pi)\>"
+syntax match quilComplex "\v\<(pi|i)\>"
 syntax match quilComplex "\v(\d+)?i"
 syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
