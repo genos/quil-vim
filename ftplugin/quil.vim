@@ -3,6 +3,7 @@ if exists('b:quil_ftplugin')
 endif
 let b:quil_ftplugin = 1
 
+setlocal iskeyword+=-
 setlocal commentstring=#\ %s
 setlocal tabstop=4
 setlocal softtabstop=4
