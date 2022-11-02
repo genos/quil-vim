@@ -23,7 +23,7 @@ syntax match quilLabel "\v\@[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 syntax match quilParameter "\v%[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
-syntax match quilString '\v"([^\"]|\"|\\)*'
+syntax region quilString start=/"/ skip=/\\"/ end=/"/ oneline
 
 syntax match quilIdentifier "\v[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
