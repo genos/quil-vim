@@ -16,7 +16,7 @@ syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
 syntax match quilOperator "^\|*\|/\|+\|-"
 
-syntax match quilLabel "\v@[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
+syntax match quilLabel "\v\@[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 syntax match quilParameter "\v%[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
