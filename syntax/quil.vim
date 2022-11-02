@@ -13,7 +13,7 @@ syntax keyword quilType BIT OCTET REAL INTEGER
 
 syntax match quilInteger "\v\d+"
 syntax match quilReal "\v(\d+)?\.?\d+(([Ee])?([-+])?\d+)?"
-syntax match quilComplex "i\|pi"
+syntax match quilComplex "\v\<(i|pi)\>"
 syntax match quilComplex "\v(\d+)?i"
 syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
@@ -25,7 +25,7 @@ syntax match quilParameter "\v[%][A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 syntax region quilString start=/"/ skip=/\\"/ end=/"/ oneline
 
-syntax match quilIdentifier "\v\<[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?\>"
+syntax match quilIdentifier "\v[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
 highlight link quilComment Comment
 highlight link quilKeyword Keyword
