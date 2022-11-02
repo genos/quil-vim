@@ -14,6 +14,7 @@ syntax match quilInteger "\v\d+"
 syntax match quilReal "\v(\d+)?\.?\d+(([Ee])?([-+])?\d+)?"
 syntax match quilComplex "\v\<i\>"
 syntax match quilComplex "\v\<pi\>"
+syntax match quilComplex "\v\<pi/\d+\>"
 syntax match quilComplex "\v(\d+)?i"
 syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
