@@ -19,7 +19,7 @@ syntax match quilComplex "\vpi/\d+"
 syntax match quilComplex "\v(\d+)?i"
 syntax match quilComplex "\v((\d+)?\.?\d+(([Ee])?([-+])?\d+)?)?i"
 
-syntax match quilOperator "^\|*\|/\|+\|-"
+syntax match quilOperator "^\|*\|/\|+\|-\|\[\|\]"
 
 syntax match quilLabel "\v\@[A-Za-z_]([A-Za-z0-9\-_]*[A-Za-z0-9_])?"
 
